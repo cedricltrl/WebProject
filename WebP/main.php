@@ -18,7 +18,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="WebP/main.php">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="main.php">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Events</a>
@@ -39,7 +39,7 @@
                 <a class="nav-link" href="#">Sign in</a>
             </li>
             <li>
-                <a class="nav-link" href="/WebP/inscription.php">Sign Up</a>
+                <a class="nav-link" href="inscription.php">Sign Up</a>
             </li>
         </div>
         
