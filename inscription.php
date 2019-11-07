@@ -38,8 +38,8 @@
     <input type="text" placeholder="Enter location of your email" name="mail"  required>
 
     <label for="psw"><b>Put Password</b></label>
-    <input type="password" placeholder="Put Password" name="psw" required>
-<!-- pattern='[#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])#]'-->
+    <input type="password" placeholder="Put Password" name="psw" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 

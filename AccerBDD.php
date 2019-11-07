@@ -1,12 +1,20 @@
 <?php
-function connexobjet(){
-    include_once("myparam.inc.php");
-    $idcom = new mysqli (HOST,USER,PASS,BASE);
-    if (!$idcom){
-      echo "<script type=text/javascript>";
-      echo "alert ('Connexion inpossible à la BDD')</script>";
+function connexobject($base,$param){
+    include_once($param.".inc.php");
+    $dsn = "mysql:host=".HOST.";dbname=".$base;
+    $user = USER;
+    $pass = PASS;
+    try{
+      $bdd = new PDO ($dsn,$user,$pass);
+      return $bdd;
+    }
+    catch(PDOException $except){
+      echo "echec de connexion",$except->getMessage();
+      return false;
       exit();
-  }
-  return $idcom;
+    }
+
+  
+  
 }
  ?>
