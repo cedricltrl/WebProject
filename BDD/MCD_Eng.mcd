@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{B39CD54A-9765-4F5E-8B16-5F533C2267DC}" Label="" LastModificationDate="1573142257" Name="MCD_Eng" Objects="93" Symbols="20" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" signature="CDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{B39CD54A-9765-4F5E-8B16-5F533C2267DC}" Label="" LastModificationDate="1573201733" Name="MCD_Eng" Objects="95" Symbols="20" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" signature="CDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,8 +12,8 @@
 <a:Code>MCD_ENG</a:Code>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
-<a:ModificationDate>1573142257</a:ModificationDate>
-<a:Modifier>Renouf</a:Modifier>
+<a:ModificationDate>1573201733</a:ModificationDate>
+<a:Modifier>Antoine.C</a:Modifier>
 <a:History>ORG {4A67BD09-004A-499E-91E1-EAD3A7EA13FD}
 DAT 1573129274</a:History>
 <a:PackageOptionsText>[FolderOptions]
@@ -1319,8 +1319,8 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o24">
 <a:CreationDate>1573129274</a:CreationDate>
 <a:ModificationDate>1573129274</a:ModificationDate>
-<a:Rect>((-47887,13650), (-34476,18447))</a:Rect>
-<a:ListOfPoints>((-47887,18447),(-47887,13650),(-34476,13650))</a:ListOfPoints>
+<a:Rect>((-47925,13650), (-34476,18069))</a:Rect>
+<a:ListOfPoints>((-47887,18069),(-47887,13650),(-34476,13650))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744576</a:LineColor>
@@ -1404,7 +1404,7 @@ CARD 0 Arial,8,N</a:FontList>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:ModificationDate>1573129274</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-58267,17370), (-41557,27032))</a:Rect>
+<a:Rect>((-58267,16883), (-41557,27519))</a:Rect>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16777136</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1607,14 +1607,16 @@ LABL 0 Arial,8,N</a:FontList>
 <c:Entities>
 <o:Entity Id="o36">
 <a:ObjectID>F77181CD-E3EB-460F-8F7C-E8B26A1137CB</a:ObjectID>
-<a:Name>goosies</a:Name>
-<a:Code>GOOSIES</a:Code>
+<a:Name>goodies</a:Name>
+<a:Code>GOODIES</a:Code>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
-<a:ModificationDate>1573142257</a:ModificationDate>
-<a:Modifier>Renouf</a:Modifier>
+<a:ModificationDate>1573201733</a:ModificationDate>
+<a:Modifier>Antoine.C</a:Modifier>
 <a:History>ORG {11ABF34E-9D79-45C8-BAD2-73B2E57BC4BA}
-DAT 1573129274</a:History>
+DAT 1573129274
+ATT NAME
+ATT CODE</a:History>
 <c:Identifiers>
 <o:Identifier Id="o46">
 <a:ObjectID>9917EDF0-1A65-473F-90F7-3DE09A626714</a:ObjectID>
@@ -1718,6 +1720,16 @@ DAT 1573129274</a:History>
 <o:DataItem Ref="o60"/>
 </c:DataItem>
 </o:EntityAttribute>
+<o:EntityAttribute Id="o61">
+<a:ObjectID>7F951246-8855-4EF6-8349-4363E54D383D</a:ObjectID>
+<a:CreationDate>1573200774</a:CreationDate>
+<a:Creator>Antoine.C</a:Creator>
+<a:ModificationDate>1573200786</a:ModificationDate>
+<a:Modifier>Antoine.C</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o62"/>
+</c:DataItem>
+</o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
 <o:Entity Id="o43">
@@ -1731,7 +1743,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {AFE6C105-BB32-42B0-860C-E5928B6F1846}
 DAT 1573129274</a:History>
 <c:Identifiers>
-<o:Identifier Id="o61">
+<o:Identifier Id="o63">
 <a:ObjectID>DCC5B0D6-331A-47E7-A274-258B593D47D3</a:ObjectID>
 <a:Name>id_commentary</a:Name>
 <a:Code>ID_COMMENTARY</a:Code>
@@ -1742,15 +1754,15 @@ DAT 1573129274</a:History>
 <a:History>ORG {EEEB7FE3-81AE-4E0E-9C93-39A0EC1704DD}
 DAT 1573129274</a:History>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o62"/>
+<o:EntityAttribute Ref="o64"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o61"/>
+<o:Identifier Ref="o63"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o62">
+<o:EntityAttribute Id="o64">
 <a:ObjectID>89B890C0-2C9D-449C-B639-13C38BA495DE</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1760,10 +1772,10 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
-<o:DataItem Ref="o63"/>
+<o:DataItem Ref="o65"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o64">
+<o:EntityAttribute Id="o66">
 <a:ObjectID>A9BACFCE-CB1A-4695-ABC4-8149B5484F3E</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1772,7 +1784,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {52F06240-7557-48A7-9602-2C9C67AD5156}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o65"/>
+<o:DataItem Ref="o67"/>
 </c:DataItem>
 </o:EntityAttribute>
 </c:Attributes>
@@ -1788,7 +1800,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {61EEADFE-876E-4C61-9B3B-D82E3B8F50B6}
 DAT 1573129274</a:History>
 <c:Identifiers>
-<o:Identifier Id="o66">
+<o:Identifier Id="o68">
 <a:ObjectID>94FB3487-F5CB-4455-83B1-7E331DC7548E</a:ObjectID>
 <a:Name>activity_id</a:Name>
 <a:Code>ACTIVITY_ID</a:Code>
@@ -1799,15 +1811,15 @@ DAT 1573129274</a:History>
 <a:History>ORG {D7ECE609-679E-46A8-92EB-6C7D36B8AE54}
 DAT 1573129274</a:History>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o67"/>
+<o:EntityAttribute Ref="o69"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o66"/>
+<o:Identifier Ref="o68"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o67">
+<o:EntityAttribute Id="o69">
 <a:ObjectID>1A958129-7A8B-4F50-A105-F55365B7DAD6</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1817,10 +1829,10 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
-<o:DataItem Ref="o68"/>
+<o:DataItem Ref="o70"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o69">
+<o:EntityAttribute Id="o71">
 <a:ObjectID>0D06E10C-27C2-46AE-92F0-4E813926637C</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1829,10 +1841,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {2F256050-9050-4F1B-8A60-737F265F8E18}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o70"/>
+<o:DataItem Ref="o72"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o71">
+<o:EntityAttribute Id="o73">
 <a:ObjectID>98B6676F-AA79-41C3-ADE6-F8FCF1146476</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1841,10 +1853,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {9EA2C650-F564-4D92-A10E-C341FC2E2C8B}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o72"/>
+<o:DataItem Ref="o74"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o73">
+<o:EntityAttribute Id="o75">
 <a:ObjectID>4D95E3BB-4C3F-47BC-BBB3-8D0DEF60E5C6</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1853,10 +1865,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {281C67D4-6006-4D9A-9EF4-50A65E1C5E1F}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o74"/>
+<o:DataItem Ref="o76"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o75">
+<o:EntityAttribute Id="o77">
 <a:ObjectID>92C65C3E-FC58-4323-BD64-0A0460FD1465</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1865,10 +1877,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {615B3A33-1BEC-46AB-AFF4-9A88713B83F3}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o76"/>
+<o:DataItem Ref="o78"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o77">
+<o:EntityAttribute Id="o79">
 <a:ObjectID>664DD20F-B285-4CD7-8995-BC52041C6805</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1877,10 +1889,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {5F0135FB-6ACC-4211-9AAE-0735E322D2F0}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o78"/>
+<o:DataItem Ref="o80"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o79">
+<o:EntityAttribute Id="o81">
 <a:ObjectID>2FAB0497-1C38-44AF-8382-77EF524ED779</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1889,7 +1901,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {E585F184-65A3-482C-BEF4-1F937C8D7528}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o80"/>
+<o:DataItem Ref="o82"/>
 </c:DataItem>
 </o:EntityAttribute>
 </c:Attributes>
@@ -1905,7 +1917,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {F65359FD-CEC2-4570-A9A0-2F05C38F04F9}
 DAT 1573129274</a:History>
 <c:Identifiers>
-<o:Identifier Id="o81">
+<o:Identifier Id="o83">
 <a:ObjectID>CD897C36-D8D7-4EE5-A725-F54D1B7DCC99</a:ObjectID>
 <a:Name>user_id</a:Name>
 <a:Code>USER_ID</a:Code>
@@ -1916,15 +1928,15 @@ DAT 1573129274</a:History>
 <a:History>ORG {CE8C74D2-0986-4778-B5DB-200A666E4D0C}
 DAT 1573129274</a:History>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o82"/>
+<o:EntityAttribute Ref="o84"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o81"/>
+<o:Identifier Ref="o83"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o82">
+<o:EntityAttribute Id="o84">
 <a:ObjectID>149815E9-27FA-4A56-8E7D-1D18ED3C599E</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1934,10 +1946,10 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
-<o:DataItem Ref="o83"/>
+<o:DataItem Ref="o85"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o84">
+<o:EntityAttribute Id="o86">
 <a:ObjectID>5BD474B9-4678-4C5C-950D-F6AB69AC755F</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1946,10 +1958,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {AAC41F47-9D17-4569-A9D4-EE7F4DB2855F}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o85"/>
+<o:DataItem Ref="o87"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o86">
+<o:EntityAttribute Id="o88">
 <a:ObjectID>15978D24-3470-441A-B236-27B2CDEFAD82</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1958,10 +1970,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {B748ED26-5E43-4211-9D45-5C7009384E90}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o87"/>
+<o:DataItem Ref="o89"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o88">
+<o:EntityAttribute Id="o90">
 <a:ObjectID>A0DC88AF-3702-49F0-B1FC-0D171EDA6228</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1970,10 +1982,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {EDE2786D-4605-4A9E-BCE8-57B99C97322D}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o89"/>
+<o:DataItem Ref="o91"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o90">
+<o:EntityAttribute Id="o92">
 <a:ObjectID>FA66E610-07AE-4512-8CE9-B0ACC97AD57D</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1982,10 +1994,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {413606C3-F9BA-47BA-9EC5-2ABB64298B66}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o91"/>
+<o:DataItem Ref="o93"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o92">
+<o:EntityAttribute Id="o94">
 <a:ObjectID>06D2C474-0901-41DC-85EA-AE775BEAA3FA</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -1994,10 +2006,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {1B7E25D4-19FD-473A-BFA5-F766705530F1}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o93"/>
+<o:DataItem Ref="o95"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o94">
+<o:EntityAttribute Id="o96">
 <a:ObjectID>DB2155B6-9946-4615-AF0C-1F3662DA6678</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -2006,10 +2018,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {D9439062-92B3-4D38-9083-94C6F77B5A67}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o95"/>
+<o:DataItem Ref="o97"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o96">
+<o:EntityAttribute Id="o98">
 <a:ObjectID>5587E41C-A5CE-4C4A-88D9-068A5E935667</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -2018,7 +2030,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {6DFC77CA-71DD-49A5-A26F-8BCD52520E34}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o97"/>
+<o:DataItem Ref="o99"/>
 </c:DataItem>
 </o:EntityAttribute>
 </c:Attributes>
@@ -2034,7 +2046,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {8A1A09F6-0830-44DD-847B-5DAE8005FCBC}
 DAT 1573129274</a:History>
 <c:Identifiers>
-<o:Identifier Id="o98">
+<o:Identifier Id="o100">
 <a:ObjectID>442EA0D4-88C5-41DD-987E-DD5CA8B4105A</a:ObjectID>
 <a:Name>picture_id</a:Name>
 <a:Code>PICTURE_ID</a:Code>
@@ -2045,15 +2057,15 @@ DAT 1573129274</a:History>
 <a:History>ORG {25818A5A-C7BF-4979-9E46-C62FC70DD9C7}
 DAT 1573129274</a:History>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o99"/>
+<o:EntityAttribute Ref="o101"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o98"/>
+<o:Identifier Ref="o100"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o99">
+<o:EntityAttribute Id="o101">
 <a:ObjectID>F020F278-4F8E-4DA6-BE6D-FBC5A65CB2EF</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -2063,10 +2075,10 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
-<o:DataItem Ref="o100"/>
+<o:DataItem Ref="o102"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o101">
+<o:EntityAttribute Id="o103">
 <a:ObjectID>56B0E9FF-0F51-4F91-BA86-9CF5231B7E13</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -2075,10 +2087,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {53C68505-CE98-4369-B12F-74B02DA33B01}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o102"/>
+<o:DataItem Ref="o104"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o103">
+<o:EntityAttribute Id="o105">
 <a:ObjectID>48F0A8CC-AE51-44C4-B546-DC7DCCA8F4AF</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -2087,10 +2099,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {DE3AC41A-3400-4D19-A34F-8AA1C2F5AD16}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o104"/>
+<o:DataItem Ref="o106"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o105">
+<o:EntityAttribute Id="o107">
 <a:ObjectID>68A5768E-5334-4E74-805C-52E0FDC6D097</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -2099,10 +2111,10 @@ DAT 1573129274</a:History>
 <a:History>ORG {6749BC15-A5ED-4300-A9C7-8F15CB0EAE85}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o106"/>
+<o:DataItem Ref="o108"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o107">
+<o:EntityAttribute Id="o109">
 <a:ObjectID>4B23FF55-A243-4AF7-8F9D-A1D096E83538</a:ObjectID>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
@@ -2111,7 +2123,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {A77BD21C-BB66-48B3-8F6B-3FF346194FAF}
 DAT 1573129274</a:History>
 <c:DataItem>
-<o:DataItem Ref="o108"/>
+<o:DataItem Ref="o110"/>
 </c:DataItem>
 </o:EntityAttribute>
 </c:Attributes>
@@ -2157,13 +2169,14 @@ DAT 1573129274</a:History>
 <o:DataItem Id="o54">
 <a:ObjectID>ACC5DEEA-7A16-43A7-B5ED-629EF0449789</a:ObjectID>
 <a:Name>goodies_in_stock</a:Name>
-<a:Code>QUANTIT__PRODUIT</a:Code>
+<a:Code>GOODIES_IN_STOCK</a:Code>
 <a:CreationDate>1573129274</a:CreationDate>
 <a:Creator>Renouf</a:Creator>
-<a:ModificationDate>1573129274</a:ModificationDate>
-<a:Modifier>Renouf</a:Modifier>
+<a:ModificationDate>1573201636</a:ModificationDate>
+<a:Modifier>Antoine.C</a:Modifier>
 <a:History>ORG {9057CF9D-3D69-4832-808F-BF91F0525EE4}
-DAT 1573129274</a:History>
+DAT 1573129274
+ATT CODE</a:History>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o56">
@@ -2190,7 +2203,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o68">
+<o:DataItem Id="o70">
 <a:ObjectID>710DC091-B92F-467A-B745-F08CEA690327</a:ObjectID>
 <a:Name>activity_id</a:Name>
 <a:Code>ACTIVITY_ID</a:Code>
@@ -2202,7 +2215,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>NO</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o70">
+<o:DataItem Id="o72">
 <a:ObjectID>77A8E81F-CD47-4C23-8B5C-8642F8D8C0A3</a:ObjectID>
 <a:Name>activity_name</a:Name>
 <a:Code>ACTIVITY_NAME</a:Code>
@@ -2214,7 +2227,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o72">
+<o:DataItem Id="o74">
 <a:ObjectID>159F3095-C5BC-4474-86D8-2F11EA52A0F4</a:ObjectID>
 <a:Name>activity_dated</a:Name>
 <a:Code>ACTIVITY_DATED</a:Code>
@@ -2226,7 +2239,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>D</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o63">
+<o:DataItem Id="o65">
 <a:ObjectID>E1792573-AB7E-4B61-B57C-F91210FBC012</a:ObjectID>
 <a:Name>commentary_id</a:Name>
 <a:Code>COMMENTARY_ID</a:Code>
@@ -2238,7 +2251,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>NO</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o74">
+<o:DataItem Id="o76">
 <a:ObjectID>93E0FB0E-A07C-4072-B185-BB71A020369B</a:ObjectID>
 <a:Name>activity_description</a:Name>
 <a:Code>ACTIVITY_DESCRIPTION</a:Code>
@@ -2250,7 +2263,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o76">
+<o:DataItem Id="o78">
 <a:ObjectID>FC6BCCE1-FC8D-4599-9CEA-69CA45578A5D</a:ObjectID>
 <a:Name>activity_time</a:Name>
 <a:Code>ACTIVITY_TIME</a:Code>
@@ -2262,7 +2275,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>T</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o78">
+<o:DataItem Id="o80">
 <a:ObjectID>3B28EC5D-456C-4A71-BC17-72FAE5D042F0</a:ObjectID>
 <a:Name>activity_cost</a:Name>
 <a:Code>ACTIVITY_COST</a:Code>
@@ -2274,7 +2287,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>MN</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o83">
+<o:DataItem Id="o85">
 <a:ObjectID>44C033C4-B839-4FCE-83A1-668751D2770E</a:ObjectID>
 <a:Name>user_id</a:Name>
 <a:Code>USER_ID</a:Code>
@@ -2286,7 +2299,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>NO</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o85">
+<o:DataItem Id="o87">
 <a:ObjectID>B9AD0912-5FA3-4FB4-8857-C857791BC18D</a:ObjectID>
 <a:Name>first_name</a:Name>
 <a:Code>FIRST_NAME</a:Code>
@@ -2298,7 +2311,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o109">
+<o:DataItem Id="o111">
 <a:ObjectID>09CD0B8C-789D-40F0-BD6D-9329A22C37B7</a:ObjectID>
 <a:Name>MDP</a:Name>
 <a:Code>MDP</a:Code>
@@ -2310,7 +2323,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o87">
+<o:DataItem Id="o89">
 <a:ObjectID>3D67B273-1B19-41B4-9AC6-4EE623C51E74</a:ObjectID>
 <a:Name>last_name</a:Name>
 <a:Code>LAST_NAME</a:Code>
@@ -2322,7 +2335,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o89">
+<o:DataItem Id="o91">
 <a:ObjectID>3EEC4585-2D9F-460B-8896-831365F0BEBA</a:ObjectID>
 <a:Name>email</a:Name>
 <a:Code>EMAIL</a:Code>
@@ -2334,7 +2347,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o91">
+<o:DataItem Id="o93">
 <a:ObjectID>03D5919D-7D5B-43BA-8731-07584E354354</a:ObjectID>
 <a:Name>docket</a:Name>
 <a:Code>DOCKET</a:Code>
@@ -2346,7 +2359,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o93">
+<o:DataItem Id="o95">
 <a:ObjectID>7D9B14C7-B0FD-4CB9-BEAA-4B5614392DB6</a:ObjectID>
 <a:Name>campus</a:Name>
 <a:Code>CAMPUS</a:Code>
@@ -2358,7 +2371,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o95">
+<o:DataItem Id="o97">
 <a:ObjectID>B5BF3B51-CEBD-412F-B057-C5CACA9DBA56</a:ObjectID>
 <a:Name>bascket</a:Name>
 <a:Code>BASCKET</a:Code>
@@ -2370,7 +2383,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o97">
+<o:DataItem Id="o99">
 <a:ObjectID>C3DC31C3-57E6-45D9-86F7-8D44B5329E27</a:ObjectID>
 <a:Name>password</a:Name>
 <a:Code>PASSWORD</a:Code>
@@ -2382,7 +2395,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o100">
+<o:DataItem Id="o102">
 <a:ObjectID>6D029509-36A6-4D07-A0CA-4491C87A0560</a:ObjectID>
 <a:Name>picture_id</a:Name>
 <a:Code>PICTURE_ID</a:Code>
@@ -2394,7 +2407,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>NO</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o102">
+<o:DataItem Id="o104">
 <a:ObjectID>9F358CEE-8307-42B5-A442-3AB1DAE3B0FD</a:ObjectID>
 <a:Name>picture_name</a:Name>
 <a:Code>PICTURE_NAME</a:Code>
@@ -2406,7 +2419,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o104">
+<o:DataItem Id="o106">
 <a:ObjectID>37FE653F-B2CE-4B55-9E37-535C1C305A54</a:ObjectID>
 <a:Name>picture_description</a:Name>
 <a:Code>PICTURE_DESCRIPTION</a:Code>
@@ -2418,7 +2431,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o106">
+<o:DataItem Id="o108">
 <a:ObjectID>A71648E6-3163-4FCF-8097-75A96D3C7B81</a:ObjectID>
 <a:Name>likes</a:Name>
 <a:Code>LIKES</a:Code>
@@ -2430,7 +2443,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>N</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o108">
+<o:DataItem Id="o110">
 <a:ObjectID>EF5FA7CA-DD50-46CC-988E-82C7B4591901</a:ObjectID>
 <a:Name>Path</a:Name>
 <a:Code>PATH</a:Code>
@@ -2442,7 +2455,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o110">
+<o:DataItem Id="o112">
 <a:ObjectID>DF68150B-B29A-4623-A26F-081A1BA0A82B</a:ObjectID>
 <a:Name>y</a:Name>
 <a:Code>Y</a:Code>
@@ -2453,7 +2466,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {3C5C8EC2-C626-4D82-997E-CE0FA4477FE9}
 DAT 1573129274</a:History>
 </o:DataItem>
-<o:DataItem Id="o111">
+<o:DataItem Id="o113">
 <a:ObjectID>66F03888-8794-4A4E-B6DA-50573F315656</a:ObjectID>
 <a:Name>Attribut_27</a:Name>
 <a:Code>ATTRIBUT_27</a:Code>
@@ -2464,7 +2477,7 @@ DAT 1573129274</a:History>
 <a:History>ORG {B207921A-44BE-45AF-B0DF-552EAC3622D2}
 DAT 1573129274</a:History>
 </o:DataItem>
-<o:DataItem Id="o112">
+<o:DataItem Id="o114">
 <a:ObjectID>65343BAB-1016-4811-88E5-FAE72B13CC3F</a:ObjectID>
 <a:Name>Commentaire</a:Name>
 <a:Code>COMMENTAIRE</a:Code>
@@ -2476,7 +2489,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o65">
+<o:DataItem Id="o67">
 <a:ObjectID>09BE1A5F-3BA9-4B08-8BAB-C2889A896FB5</a:ObjectID>
 <a:Name>comment</a:Name>
 <a:Code>COMMENT</a:Code>
@@ -2488,7 +2501,7 @@ DAT 1573129274</a:History>
 DAT 1573129274</a:History>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o80">
+<o:DataItem Id="o82">
 <a:ObjectID>314C5EE7-BC25-4934-8594-D95198094F4E</a:ObjectID>
 <a:Name>recurring</a:Name>
 <a:Code>RECURRING</a:Code>
@@ -2509,6 +2522,16 @@ DAT 1573129274</a:History>
 <a:ModificationDate>1573142257</a:ModificationDate>
 <a:Modifier>Renouf</a:Modifier>
 <a:DataType>TXT</a:DataType>
+</o:DataItem>
+<o:DataItem Id="o62">
+<a:ObjectID>0FEE82B0-0C6B-41B6-AF6B-2A1C668E738A</a:ObjectID>
+<a:Name>goodies_cost</a:Name>
+<a:Code>GOODIES_COST</a:Code>
+<a:CreationDate>1573200774</a:CreationDate>
+<a:Creator>Antoine.C</a:Creator>
+<a:ModificationDate>1573201733</a:ModificationDate>
+<a:Modifier>Antoine.C</a:Modifier>
+<a:DataType>MN</a:DataType>
 </o:DataItem>
 </c:DataItems>
 <c:Associations>
@@ -2711,7 +2734,7 @@ DAT 1573129274</a:History>
 </o:AssociationLink>
 </c:AssociationsLinks>
 <c:TargetModels>
-<o:TargetModel Id="o113">
+<o:TargetModel Id="o115">
 <a:ObjectID>730AA88C-9162-451A-8092-7C41564F185D</a:ObjectID>
 <a:Name>Données conceptuelles_1</a:Name>
 <a:Code>DONN_ES_CONCEPTUELLES_1</a:Code>
@@ -2726,7 +2749,7 @@ DAT 1573129274</a:History>
 <o:Shortcut Ref="o4"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o114">
+<o:TargetModel Id="o116">
 <a:ObjectID>95778C4B-0A1E-48DE-AD99-FBF125F1C21A</a:ObjectID>
 <a:Name>MLD_Eng</a:Name>
 <a:Code>MLD_ENG</a:Code>
@@ -2734,7 +2757,7 @@ DAT 1573129274</a:History>
 <a:Creator>Renouf</a:Creator>
 <a:ModificationDate>1573129466</a:ModificationDate>
 <a:Modifier>Renouf</a:Modifier>
-<a:TargetModelURL>file:///D|/USER/Renouf/Desktop/Projet_Web_BDD/MLD_Eng.mld</a:TargetModelURL>
+<a:TargetModelURL>file:///D|/CESI/Projet Web/BDD/Projet_Web_BDD/BDD/MLD_Eng.mld</a:TargetModelURL>
 <a:TargetModelID>BCFE7360-1191-4CB9-B676-422110E20608</a:TargetModelID>
 <a:TargetModelClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:TargetModelClassID>
 <c:SessionShortcuts>

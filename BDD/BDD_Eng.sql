@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  MySQL 5.0                                     */
-/* Date de création :  07/11/2019 16:59:25                      */
+/* Date de crï¿½ation :  08/11/2019 09:29:33                      */
 /*==============================================================*/
 
 
@@ -8,7 +8,7 @@ drop table if exists ACTIVITY;
 
 drop table if exists COMMENTARY;
 
-drop table if exists GOOSIES;
+drop table if exists GOODIES;
 
 drop table if exists PARTICIPATE;
 
@@ -21,113 +21,113 @@ drop table if exists USER;
 /*==============================================================*/
 /* Table : ACTIVITY                                             */
 /*==============================================================*/
-create table ACTIVITY
+create table activity
 (
-   ACTIVITY_ID          int not null auto_increment,
-   ACTIVITY_NAME        text,
-   ACTIVITY_DATED       date,
-   ACTIVITY_DESCRIPTION text,
-   ACTIVITY_TIME        time,
-   ACTIVITY_COST        float(8,2),
-   RECURRING            bool,
-   primary key (ACTIVITY_ID)
+   activity_id          int not null auto_increment,
+   activity_name        text,
+   activity_dated       date,
+   activity_description text,
+   activity_time        time,
+   activity_cost        float(8,2),
+   recurring            bool,
+   primary key (activity_id)
 );
-
 /*==============================================================*/
 /* Table : COMMENTARY                                           */
 /*==============================================================*/
-create table COMMENTARY
+create table commentary
 (
-   COMMENTARY_ID        int not null auto_increment,
-   USER_ID              int not null,
-   PICTURE_ID           int not null,
-   COMMENT              text,
-   primary key (COMMENTARY_ID)
+   commentary_id        int not null auto_increment,
+   id              int not null,
+   picture_id          int not null,
+   comment              text,
+   primary key (commentary_id)
 );
 
 /*==============================================================*/
-/* Table : GOOSIES                                              */
+/* Table : GOODIES                                              */
 /*==============================================================*/
-create table GOOSIES
+create table goodies
 (
-   GOODIES_ID           int not null auto_increment,
-   GOODIES_NAME         text,
-   GOODIES_DESCRIPTION  text,
-   QUANTIT__PRODUIT     int,
-   GOODIES_CATEGORY     text,
-   ORDER_NUMBER         int,
-   GOODIES_PHOTO        text,
-   primary key (GOODIES_ID)
+   goodies_id           int not null auto_increment,
+   goodies_name         text,
+   goodies_description  text,
+   goodies_in_stock     int,
+   goodies_category     text,
+   order_number         int,
+   goodies_photo        text,
+   goodies_cost         float(8,2),
+   primary key (goodies_id)
 );
+
 
 /*==============================================================*/
 /* Table : PARTICIPATE                                          */
 /*==============================================================*/
-create table PARTICIPATE
+create table participate
 (
-   USER_ID              int not null,
-   ACTIVITY_ID          int not null,
-   primary key (USER_ID, ACTIVITY_ID)
+   id              int not null,
+   activity_id          int not null,
+   primary key (id, activity_id)
 );
 
 /*==============================================================*/
 /* Table : PICTURE                                              */
 /*==============================================================*/
-create table PICTURE
+create table picture
 (
-   PICTURE_ID           int not null auto_increment,
-   USER_ID              int not null,
-   PICTURE_NAME         text,
-   PICTURE_DESCRIPTION  text,
-   LIKES                numeric(8,0),
-   PATH                 text,
-   primary key (PICTURE_ID)
+   picture_id           int not null auto_increment,
+   id              int not null,
+   picture_name         text,
+   picture_description  text,
+   likes                numeric(8,0),
+   path                 text,
+   primary key (picture_id)
 );
 
 /*==============================================================*/
 /* Table : PURCHASE                                             */
 /*==============================================================*/
-create table PURCHASE
+create table purchase
 (
-   USER_ID              int not null,
-   GOODIES_ID           int not null,
-   primary key (USER_ID, GOODIES_ID)
+   id              int not null,
+   goodies_id           int not null,
+   primary key (id, goodies_id)
 );
 
 /*==============================================================*/
 /* Table : USER                                                 */
 /*==============================================================*/
-create table USER
+create table user
 (
-   USER_ID              int not null auto_increment,
-   FIRST_NAME           text,
-   LAST_NAME            text,
-   EMAIL                text,
-   DOCKET               text,
-   CAMPUS               text,
-   BASCKET              text,
-   PASSWORD             text,
-   primary key (USER_ID)
+   id              int not null auto_increment,
+   first_name           text,
+   last_name            text,
+   email                text,
+   docket               text,
+   campus               text,
+   bascket              text,
+   password             text,
+   primary key (id)
 );
 
-alter table COMMENTARY add constraint FK_ILLUSTRATE foreign key (PICTURE_ID)
-      references PICTURE (PICTURE_ID) on delete restrict on update restrict;
+alter table commentary add constraint FK_ILLUSTRATE foreign key (picture_id)
+      references picture (picture_id) on delete restrict on update restrict;
 
-alter table COMMENTARY add constraint FK_WRITE foreign key (USER_ID)
-      references USER (USER_ID) on delete restrict on update restrict;
+alter table commentary add constraint FK_WRITE foreign key (id)
+      references user (id) on delete restrict on update restrict;
 
-alter table PARTICIPATE add constraint FK_PARTICIPATE foreign key (ACTIVITY_ID)
-      references ACTIVITY (ACTIVITY_ID) on delete restrict on update restrict;
+alter table participate add constraint FK_PARTICIPATE foreign key (activity_id)
+      references activity (activity_id) on delete restrict on update restrict;
 
-alter table PARTICIPATE add constraint FK_PARTICIPATE2 foreign key (USER_ID)
-      references USER (USER_ID) on delete restrict on update restrict;
+alter table participate add constraint FK_PARTICIPATE2 foreign key (id)
+      references user (id) on delete restrict on update restrict;
 
-alter table PICTURE add constraint FK_SHARE foreign key (USER_ID)
-      references USER (USER_ID) on delete restrict on update restrict;
+alter table picture add constraint FK_SHARE foreign key (id)
+      references user (id) on delete restrict on update restrict;
 
-alter table PURCHASE add constraint FK_PURCHASE foreign key (GOODIES_ID)
-      references GOOSIES (GOODIES_ID) on delete restrict on update restrict;
+alter table purchase add constraint FK_PURCHASE foreign key (goodies_id)
+      references goodies (goodies_id) on delete restrict on update restrict;
 
-alter table PURCHASE add constraint FK_PURCHASE2 foreign key (USER_ID)
-      references USER (USER_ID) on delete restrict on update restrict;
-
+alter table purchase add constraint FK_PURCHASE2 foreign key (id)
+      references user (id) on delete restrict on update restrict;
