@@ -65,26 +65,26 @@
 					<h4 class="modal-title">Add User</h4>
 				</div>
 				<div class="modal-body">
-					<label>Enter First Name</label>
+					<label for="first_name">Enter First Name</label>
 					<input type="text" name="first_name" id="first_name" class="form-control" />
 					<br />
-					<label>Enter Last Name</label>
+					<label for="last_name">Enter Last Name</label>
 					<input type="text" name="last_name" id="last_name" class="form-control" />
 					<br />
 					<br />
-		      <label>email</label>
+		      <label for="email">email</label>
 		      <input type="text" name="email" id="email" class="form-control" />
 		      <br />
-		      <label>docket</label>
+		      <label for="docket">docket</label>
 		      <input type="text" name="docket" id="docket" class="form-control" />
 		      <br />
-		      <label>Campus</label>
+		      <label for="campus">Campus</label>
 		      <input type="text" name="campus" id="campus" class="form-control" />
 		      <br />
-		      <label>bascket</label>
+		      <label for="bascket">bascket</label>
 		      <input type="text" name="bascket" id="bascket" class="form-control" />
 		      <br />
-		      <label>Password</label>
+		      <label for="password">Password</label>
 		      <input type="text" name="password" id="password" class="form-control" />
 		      <br />
 				</div>
@@ -106,7 +106,6 @@ $(document).ready(function(){
 		$('.modal-title').text("Add User");
 		$('#action').val("Add");
 		$('#operation').val("Add");
-		$('#user_uploaded_image').html('');
 	});
 
 	var dataTable = $('#user_data').DataTable({
@@ -128,6 +127,7 @@ $(document).ready(function(){
 
 	$(document).on('submit', '#user_form', function(event){
 		event.preventDefault();
+		var id = $('#id').val();
 		var firstName = $('#first_name').val();
 		var lastName = $('#last_name').val();
 		var email = $('#email').val();
@@ -135,7 +135,8 @@ $(document).ready(function(){
 		var campus = $('#campus').val();
 		var bascket = $('#bascket').val();
 		var password = $('#password').val();
-		if(first_name != '' && last_name != ''&& email != ''&& docket != ''&& campus != ''&& bascket != ''&& password != '')
+		if(null!==(first_name && last_name && email && docket && campus && bascket && password))
+		//	if(first_name != '' && last_name != ''&& email != ''&& docket != ''&& campus != ''&& bascket != ''&& password != '')
 		{
 			$.ajax({
 				url:"insert.php",
@@ -145,6 +146,7 @@ $(document).ready(function(){
 				processData:false,
 				success:function(data)
 				{
+					//Popup avec les data insérées
 					alert(data);
 					$('#user_form')[0].reset();
 					$('#userModal').modal('hide');
