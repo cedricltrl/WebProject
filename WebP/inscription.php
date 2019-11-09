@@ -28,21 +28,21 @@
     <label for="Surname"><b>Surname</b></label>
     <input type="text" placeholder="Enter Surname" name="surname" required>
 
-    <label for="date"><b>Date of Birth</b></label>
-    <input type="date" placeholder="Enter date of Birth" name="date" required>
-
-    <label for="location"></label>
+    <label for="location"><b>CESI Academy</b></label>
     <input type="text" placeholder="Enter location of your CESI" name="location" required>
 
-    <label for="mail"></label>
-    <input type="text" placeholder="Enter location of your email" name="mail"  required>
+    <label for="mail"><b>E-mail</b></label>
+    <input type="text" placeholder="Please enter your email" name="mail"  required>
 
     <label for="psw"><b>Put Password</b></label>
-    <input type="password" placeholder="Put Password" name="psw" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+    <input type="password" placeholder="Write down your password" name="psw" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <input type="password" placeholder="Repeat your password" name="psw-repeat" required>
 
+    <label>
+      <input type="checkbox" checked="" name="accept" required> Accept Customers Terms & Privacy
+    </label>
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
@@ -54,4 +54,6 @@
 
 </body>
 
-</html>"
+      
+
+</html>
