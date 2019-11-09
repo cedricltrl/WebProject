@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./assets/vendors/Bootstrap/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style_boutique.css" />
+        <link rel="stylesheet" href="portofolio/style_portofolio.css"/>
+        <script src="portofolio/script.js"></script>
 
         <title>Boutique du BDE</title>
     </head>
@@ -38,11 +40,11 @@
          <?php include("navbar.php"); ?>
 
             <div class="carrousel_produits">
-            <?php include("best_produit.php");?>
+                <?php include("best_produit.php");?>
             </div>
 
             <div class="products">
-            <?php include("liste_produit.php"); ?>
+                <?php include("portofolio/portofolio_bdd.php"); ?>
             </div>
     </div>
     

@@ -26,26 +26,17 @@
 
     <!-- L'en-tête -->    
     <header>
-    <h1 class='titre_boutique'>Boutique</h1>
+    <h1 class='titre_boutique'>Produit</h1>
     </header>
 
-    
 
-    <!-- Le corps -->
-    <div id="corps">
+    <!-- Corps -->
+    <?php include('navbar.php'); ?>
 
-        <!-- Le menu -->
-         <?php include("navbar.php"); ?>
-
-            <div class="carrousel_produits">
-            <?php include("best_produit.php");?>
-            </div>
-
-            <div class="products">
-            <?php include("liste_produit.php"); ?>
-            </div>
+    <div class="produits">
+        <?php include('produits.php'); ?>
     </div>
-    
+
     </body>
 
 </html>

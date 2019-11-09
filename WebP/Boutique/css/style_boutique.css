@@ -41,6 +41,8 @@
     background-color:black ;
 }
 
+
+/*carousel*/
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
@@ -49,3 +51,32 @@
   border: 1px solid black;
   background-color: aqua;
 }
+
+/*un produit une page*/
+.produits .image_p{
+    float: left;
+    height: 500px;
+} 
+.produits .price {
+    height : 30px;
+    width : 60px;
+    background-color : #333;
+    color : white;
+    float: top;
+    position : relative;
+    top : -21px;
+    left : 500px;
+    margin : 0px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.products .description {
+    width : 200px;
+    margin-left : 10px;
+}
+.products .flottant{
+    float:left;
+}
+

@@ -15,7 +15,7 @@
           <a class="dropdown-item" href="#">BDE</a>
           <a class="dropdown-item" href="#">Clubs</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="Boutique.php">Boutique</a>
+          <a class="dropdown-item" href="test.php">Boutique</a>
           <a class="dropdown-item" href="#">Galerie</a>
         </div>
         <div class="nav-item-end">
