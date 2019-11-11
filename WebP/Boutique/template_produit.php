@@ -35,7 +35,14 @@
 
     <div class="produits">
         <?php include('produits.php'); ?>
-    </div>
+    </div><!--<?php
+        session_start();
+        if($_SESSION['connected']){
+            echo"<div class='ajout_panier'>
+                    <button name='panier'>Ajoutez au panier</button>
+            </div> ";
+        }
+    ?>-->
 
     </body>
 

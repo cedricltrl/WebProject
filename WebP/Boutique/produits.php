@@ -9,12 +9,14 @@
                     <img src='image_temp/".$data['goodies_photo']."' class='image_p' alt='photo produit'/>
                 </div>
                 <div class='info_p'>
-                    <div class='price'>".$data['goodies_cost']."€ </div>
-                    <div class='name'>".$data['goodies_name']."</div>
-                    <div class='catégorie'>".$data['goodies_category']."
+                    
+                    <div class='name'> <strong>".$data['goodies_name']."</strong></div>
+                    <div class='prix'> Prix: ".$data['goodies_cost']."€ </div>
+                    <div class='catégorie'> Catégorie: ".$data['goodies_category']."
                     </div>
-                    <div class='description'>".$data['goodies_description']."</div>
+                    <div class='description'> Description: </br>".$data['goodies_description']."</div>
                 </div>
+                   
             </div>";
     
     
