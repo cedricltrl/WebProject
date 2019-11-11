@@ -1,3 +1,4 @@
+<!-- including the stylesheet for the form -->
 <link rel="stylesheet" type="text/css" href="register.css"/>
 
 <form action="BDD_inscription.php" method  ="POST" enctype="application/x-www-form-urlencoded" style="border:1px solid #ccc">
@@ -25,6 +26,8 @@
       <input type="radio" name="role" value="employee"> Employee<br>
       <input type="radio" name="role" value="bdemember"> BDE Member<br>
     <label for="psw"><b>Put Password</b></label>
+    <!-- pattern used to check the good requirements of the password -->
+
       <input type="password" placeholder="Write down your password" name="psw" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
 
     <label for="psw-repeat"><b>Repeat Password</b></label>

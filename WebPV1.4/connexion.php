@@ -13,12 +13,13 @@
                   </div>
 
                   <div class="container">
+                    <!-- username field -->
                     <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>
-
+                    <!-- psw field -->
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
-
+                    <!-- login button -->
                     <button type="submit">Login</button>
                     <label>
                       <input type="checkbox" checked="" name="remember"> Remember me
@@ -27,6 +28,8 @@
 
                   <div class="container" style="background-color:#f1f1f1">
                   <div class="clearfix">
+                  <!-- cancel button -->
+
                     <button type="button" onclick="history.back()" class="cancelbtn">Cancel</button>
                     <span class="psw"><a href="#">Forgot password ?</a></span>
                   </div>

@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,9 +19,15 @@
 <body>
 
 <?php
+
 include("header.php");
 
-
+if(isset($_SESSION['connected'])){
+    if($_SESSION['role']=="bdemember"){include("bdeTest.php");}
+    elseif($_SESSION['role']=="student"){include("studentTest.php");}
+    elseif($_SESSION['role']=="employee"){include("employeeTest.php");}
+    
+}
 ?>
 </body>
 <footer>

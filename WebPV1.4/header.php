@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-md bg-dark">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto align-items-center">
@@ -5,7 +6,7 @@
       <?php
       $currentPage = $_SERVER['PHP_SELF'];
       ?>
-        <a class="nav-img" href="https://www.cesi.fr"><img src="Image/Cesi_Logo.jpg" width="125" height="60"></a>
+        <a class="nav-img" href="https://www.cesi.fr"><img src="webproject/WebPV1.4/Image/Cesi_Logo.jpg" width="125" height="60"></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" <?php if($currentPage == "/main.php") {echo "active";} ?> href="main.php">Home<span class="sr-only"></span></a>
@@ -21,7 +22,7 @@
           <a class="dropdown-item" <?php if($currentPage == "/bde.php") {echo "active";} ?> href="#">BDE</a>
           <a class="dropdown-item" <?php if($currentPage == "/clubs.php") {echo "active";} ?> href="#">Clubs</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" <?php if($currentPage == "/shop.php") {echo "active";} ?> href="#">Boutique</a>
+          <a class="dropdown-item" <?php if($currentPage == "/shop.php") {echo "active";} ?> href="Boutique.php">Boutique</a>
           <a class="dropdown-item" <?php if($currentPage == "/galerie.php") {echo "active";} ?>href="#">Galerie</a>
         </div>
     </ul>
@@ -29,12 +30,23 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
             
+            <?php
+            if(isset($_SESSION['connected'])){
+              echo"
+              <li>
+              <a class=\"nav-link\" href=\"deco.php\">LOGOUT</a>
+              </li>";
+            }
+            else{
+              echo"
                 <li>
-                <a class="nav-link" href="connexion.php">Log in</a>
+                <a class=\"nav-link\" href=\"connexion.php\">Log in</a>
                   </li>
                   <li>
-                  <a class="nav-link" href="register.php">Register</a>
-                  </li>
+                  <a class=\"nav-link\" href=\"register.php\">Register</a>
+                  </li>";
+            }
+            ?>
         </div>
     </ul>
     </div>

@@ -1,0 +1,74 @@
+/*####################################
+ style boutique
+ #####################################*/
+/* Photos des produits en vente */
+
+.products .displayprod {
+    display : inline-block;
+    height : 250px;
+    background-color : white;
+    border:2px solid black;
+    margin: 5px;
+}
+
+.products .prodpic {
+    height: 150px;
+}
+
+.products .price {
+    height : 30px;
+    width : 60px;
+    background-color : #333;
+    color : white;
+    float: top;
+    position : relative;
+    top : -21px;
+    left : 5px;
+    margin : 0px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.products .description {
+    width : 200px;
+    margin-left : 10px;
+}
+
+/*titre boutique*/
+.titre_boutique{
+    color: white;
+    background-color:black ;
+}
+
+
+/*carousel*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: aqua;
+}
+
+/*un produit une page*/
+.produits .image_p{
+    float: left;
+    height: 500px;
+} 
+
+.produits .description {
+    width : 200px;
+    margin-left : 10px;
+}
+.produits .flottant{
+    float:left;
+}
+.info_p .prix{
+    background-color: black;
+    color : white;
+}
+.info_p{
+    top : 100px;
+}
