@@ -1,0 +1,109 @@
+
+#Ebody{
+    height: 100%;
+    background-color: #f2f2f2;
+    font-family: Roboto, sans-serif;
+
+}
+
+/* Center website */
+.main {
+    background-color: #f2f2f2;
+    max-width: 1000px;
+    margin: auto;
+    color: #4d75bb;
+}
+
+
+h1 {
+    margin-top: 0.5rem;
+    color: #4569a8;
+    font-size: 50px;
+    font-family: Roboto, sans-serif;
+    word-break: break-all;
+    text-align: center;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+    margin-top: auto;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #4d75bb;
+    padding: 20px;
+    color : white;
+    text-align: center;
+    border-style: solid;
+    border-color: #4569a8;
+    cursor: pointer;
+}
+
+.descrition{
+    text-align: justify;
+}
+
+.date{
+    text-align: justify;
+}
+
+.lien-event{
+    text-decoration: none;
+    color: white;
+}
+
+.titreEvt{
+    margin-top: .5rem;
+}
+
+.imageEvt{
+    border-style: solid;
+    border-color: #4569a8;
+}
+
+
+.last{
+    margin-bottom: 25px;
+}
+
+#myCarousel{
+    width:100%;
+    height:auto;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
